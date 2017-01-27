@@ -1,0 +1,16 @@
+# -*-makefile-*-
+
+packing: mtfort90.o squares.o  packing.o
+	gfortran -g -o packing mtfort90.o squares.o packing.o 
+
+mtfort90.o: mtfort90.f90
+	gfortran -g -c mtfort90.f90
+
+squares.o: squares.f90
+	gfortran -g -c squares.f90
+
+packing.o: packing.f90 
+	gfortran -g -c packing.f90
+
+clean: 
+	rm -f *.o packing
