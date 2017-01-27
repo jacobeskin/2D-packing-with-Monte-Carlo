@@ -7,7 +7,7 @@ module was NOT written by me, the authors are credited in the module source code
 Compilation instructions. The compilation of the program happens by the means of the makefile called "makesqr". Example of how 
 to compile:
 
-jacob@jeskin:~/Tila2/final$ make -f makesqr
+user@computer:~/somefolder$ make -f makesqr
 
 The following should happen:
 
@@ -22,7 +22,7 @@ Short run instructions:
 The program name is just "packing", and it takes as an input only one number, that has to be bigger than 2, from the command 
 line. An example of running the program is as follows:
 
-jacob@jeskin:~/Tila2/final$ ./packing 10
+user@computer:~/somefolder$ ./packing 10
 Seed from /dev/urandom: 1036762744
 
  Initial footprint was          110
@@ -33,8 +33,8 @@ configuration, final configuration and the footprint as a function of simulation
 
 Example of drawing the initial configuration:
 
-jacob@jeskin:~/Tila2/final$ xgraph -bb -tk InitConfig
+user@computer:~/somefolder$ xgraph -bb -tk InitConfig
 
 And an example of plotting the file fpVSsim:
 
-jacob@jeskin:~/Tila2/final$ xgraph  fpVSsim
+user@computer:~/somefolder$ xgraph  fpVSsim
