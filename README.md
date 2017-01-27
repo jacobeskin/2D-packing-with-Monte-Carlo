@@ -7,14 +7,7 @@ module was NOT written by me, the authors are credited in the module source code
 Compilation instructions. The compilation of the program happens by the means of the makefile called "makesqr". Example of how 
 to compile:
 
-user@computer:~/somefolder$ make -f makesqr
-
-The following should happen:
-
-gfortran -g -c mtfort90.f90
-gfortran -g -c squares.f90
-gfortran -g -c packing.f90
-gfortran -g -o packing mtfort90.o squares.o packing.o 
+$ make -f makesqr
 
 
 Short run instructions:
@@ -22,7 +15,7 @@ Short run instructions:
 The program name is just "packing", and it takes as an input only one number, that has to be bigger than 2, from the command 
 line. An example of running the program is as follows:
 
-user@computer:~/somefolder$ ./packing 10
+$ ./packing 10
 Seed from /dev/urandom: 1036762744
 
  Initial footprint was          110
@@ -33,8 +26,8 @@ configuration, final configuration and the footprint as a function of simulation
 
 Example of drawing the initial configuration:
 
-user@computer:~/somefolder$ xgraph -bb -tk InitConfig
+$ xgraph -bb -tk InitConfig
 
 And an example of plotting the file fpVSsim:
 
-user@computer:~/somefolder$ xgraph  fpVSsim
+$ xgraph  fpVSsim
