@@ -16,9 +16,11 @@ The program name is just "packing", and it takes as an input only one number, th
 line. An example of running the program is as follows:
 
 $ ./packing 10
+
 Seed from /dev/urandom: 1036762744
 
  Initial footprint was          110
+ 
  Final footprint is           75
 
 The program writes 3 files, InitConfig, FinalConfig and fpVSsim which contain instructions for Xgraph to plot the initial 
